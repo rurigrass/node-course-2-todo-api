@@ -15,7 +15,6 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
     // DELETE ONE
     //    db.collection('Todos').deleteOne({text: 'eat lunch'}).then((result) => {
     //         console.log(result);
-
     //    });
 
     //    // FIND ONE AND DELETE
@@ -23,13 +22,15 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
     //        console.log(result);
     //    })
 
+    // //FIND ONE DELETE SPECIFIC ID
     // db.collection('Users').findOneAndDelete({
     //     _id: new ObjectID('5b8c18f88676a7229b961271')
     // }).then((result) => {
     //     console.log(JSON.stringify(result, undefined, 2));  
     // });
 
-    db.collection('Users').deleteMany({name: 'Ruairidh'});
+    // //FIND ONE DELETE ALL WITH NAME RUAIRIDH
+    // db.collection('Users').deleteMany({name: 'Ruairidh'});
 
 
 
